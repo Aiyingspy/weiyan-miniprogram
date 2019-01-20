@@ -1,1 +1,17 @@
-/* pages/index/index.wxss */
+.index-continer{
+  margin-top: 20rpx;
+}
+
+.search{
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+}
+
+.card{
+  flex: column;
+  margin-top: 20rpx;
+}
+
+.margin{
+  margin-top: 20rpx;
+}

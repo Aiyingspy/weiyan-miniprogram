@@ -20,21 +20,21 @@ Page({
       }
       else {
         var url = '/login' + '/' + username + '/' + userpwd1
-      this.http(url, this.loginCallback)
+      this.http(url, username, userpwd1,  this.loginCallback)
       }
 
   },
-  http: function (urlAttr, loginCallback) {
+  http: function (urlAttr, username, userpwd1,  loginCallback) {
     wx.request({
       url: app.globalData.url + urlAttr,
       method: "GET",
       header: app.globalData.header,
       success(res) {
-        loginCallback(res.data);
+        loginCallback(res.data,username, userpwd1, );
       }
     })  
   },
-  loginCallback: function (res) {
+  loginCallback: function (res, username, userpwd1, ) {
     if (res != null) {
       Toast.fail('用户名已被注册')
       this.setData({
@@ -44,13 +44,14 @@ Page({
       })
     }
     else{
+      console.log("名字1："+username)
       var url = '/register' + '/' + username + '/' + userpwd1
-      this.https(url,username, this.registerCallback)
+      this.https(url, username, this.registerCallback)
     }
    
   },
 
-  https: function (urlAttr, username,registerCallback) {
+  https: function (urlAttr, username,  registerCallback) {
     wx.request({
       url: app.globalData.url + urlAttr,
       method: "GET",
@@ -61,6 +62,7 @@ Page({
     })
   },
   registerCallback: function (res, username) {
+    console.log("名字2：" + username)
     if (username == res[0].user_name) {
       Toast.success('注册成功');
       wx.navigateTo({

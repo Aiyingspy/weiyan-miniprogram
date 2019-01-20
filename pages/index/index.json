@@ -5,5 +5,10 @@
     "navigationBarTitleText": "微言",
     "navigationBarTextStyle": "grey"
   },
-  "usingComponents": {}
+  "usingComponents": {
+  "van-search": "/miniprogram_npm/vant-weapp/search/index",
+  "van-row": "/miniprogram_npm/vant-weapp/row/index",
+  "van-col": "/miniprogram_npm/vant-weapp/col/index",
+  "van-card": "/miniprogram_npm/vant-weapp/card/index"
+}
 }

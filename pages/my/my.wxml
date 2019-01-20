@@ -1,25 +1,26 @@
 <!--pages/my/my.wxml-->
 <view class='container'>
   <view class="userinfo">
-    <image class='userinfo-avatar' src='../images/edit.png' mode='aspectFit' bindtap='setting'></image>
     <text class="userinfo-nickname">{{userName}}</text>
   </view>
-  <navigator url='/pages/order/order' class='my_order_navigator'>
-    <view>我的笔记</view>
-    <view class='arrow'> > </view>
-  </navigator>
-  <navigator url='/pages/settings/settings?UserName={{userName}}' class='account-setttings'>
-    <view >账户设置</view>
-    <view class='arrow'> > </view>
-  </navigator>
-  <view class='line'>
-  </view>
 
-  <view class="{{showView?'show':'hide'}}">
-    <navigator url='/pages/login/login'>
-      <view class='bindAccount'>
-        绑定账号
-      </view>
-    </navigator>
+  <van-row gutter="150" class='row'>
+  <van-col >我的笔记</van-col>
+  <van-col > > </van-col>
+
+</van-row>
+  <van-row gutter="150"  class='row'>
+  <van-col >账户设置</van-col>
+  <van-col > > </van-col>
+</van-row>
+
+  <view class='button'>
+    <button form-type='submit' type='primary'  size="normal class='btn-margin'">
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;</text>
+    绑<text decode="{{true}}" space="{{true}}">&nbsp;</text>定
+    <text decode="{{true}}" space="{{true}}">&nbsp;</text>账
+    <text decode="{{true}}" space="{{true}}">&nbsp;</text>户
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;</text>
+    </button>
   </view>
 </view>

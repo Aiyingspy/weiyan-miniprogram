@@ -1,2 +1,34 @@
-<view>
+<view class="index-continer">
+
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  use-action-slot
+  bind:search="onSearch"
+  class="search"
+>
+  <view slot="action" bind:tap="onSearch">搜索</view>
+</van-search>
+<view class='card'>
+
+<van-card
+  desc="北大未名湖"
+  title="生活"
+  thumb="{{ imageURL1 }}"
+/>
+<view class='margin'></view>
+<van-card
+  desc="南锣鼓巷"
+  title="旅游"
+  thumb="{{ imageURL2 }}"
+/>
+<view class='margin'></view>
+<van-card
+  desc="苏州街夜晚"
+  title="游记"
+  thumb="{{ imageURL3 }}"
+/>
+
+</view>
+
 </view>

@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    imageURL1:'/pages/images/pku.png',
+    imageURL2: '/pages/images/nan.png',
+    imageURL3: '/pages/images/night.png'
   },
 
   /**

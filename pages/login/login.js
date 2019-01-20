@@ -45,7 +45,7 @@ Page({
     if (username == res[0].user_name) {
       Toast.success("登陆成功")
       wx.switchTab({
-        url: '../my/my',
+        url: '../index/index',
       })
     }
     else {
