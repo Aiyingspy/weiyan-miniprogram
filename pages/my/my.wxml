@@ -1,0 +1,25 @@
+<!--pages/my/my.wxml-->
+<view class='container'>
+  <view class="userinfo">
+    <image class='userinfo-avatar' src='../images/edit.png' mode='aspectFit' bindtap='setting'></image>
+    <text class="userinfo-nickname">{{userName}}</text>
+  </view>
+  <navigator url='/pages/order/order' class='my_order_navigator'>
+    <view>我的笔记</view>
+    <view class='arrow'> > </view>
+  </navigator>
+  <navigator url='/pages/settings/settings?UserName={{userName}}' class='account-setttings'>
+    <view >账户设置</view>
+    <view class='arrow'> > </view>
+  </navigator>
+  <view class='line'>
+  </view>
+
+  <view class="{{showView?'show':'hide'}}">
+    <navigator url='/pages/login/login'>
+      <view class='bindAccount'>
+        绑定账号
+      </view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,42 @@
+<view class='indexcontainer'>
+<van-toast id="van-toast" />
+<form bindsubmit='loginFun'>
+  <view class='van-field'>
+    <van-cell-group >
+    <view class='field'>
+      <van-field
+          name="username"
+          value="{{ username }}"
+          label="用户名"
+          placeholder="请输入用户名"
+          clearable
+          bind:click-icon="onClickIcon"
+        />
+    </view>
+      
+      <van-field
+        name="password"
+        value="{{ password }}"
+        type="password"
+        label="密码"
+        placeholder="请输入密码"
+        border="{{ true }}"
+      />
+    </van-cell-group>
+  </view>
+
+  <view class='button'>
+    <button bindtap="toRegister"  size="normal class='btn-margin'">
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>
+    注<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>册
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>
+    </button>
+    <button form-type='submit'  class="btn-color" type="primary" size="normal">
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>
+    登<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>录
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>
+    </button>
+  </view>
+  </form>
+  
+</view>

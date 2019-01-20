@@ -1,0 +1,65 @@
+/* pages/my/my.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.my_order_navigator{
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  padding: 10px;
+  background: #EEEEEE;
+  margin-top: 20px;
+  border-bottom: 1rpx solid gray;
+}
+.account-setttings{
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  padding: 10px;
+  background: #EEEEEE;
+  margin-top: 1px;
+}
+
+.arrow{
+  margin-left:70%;
+}
+
+.line{
+  border-bottom: 1rpx solid;
+  border-color: gray;
+}
+
+.my_order{
+   font-size: 16px;
+}
+
+.bindAccount{
+  text-align:center;
+  letter-spacing: 1rpx;
+  font-size:34rpx;
+  margin-top:180px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px;
+  background-color: deepskyblue;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}

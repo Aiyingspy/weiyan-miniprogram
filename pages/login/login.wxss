@@ -1,0 +1,28 @@
+/* pages/login/login.wxss */
+
+.indexcontainer{
+  display: flex;
+  margin-top: 300rpx;
+  flex-direction:column;
+  
+}
+
+.van-field{
+  display: flex;
+  margin-left: 130rpx;
+}
+
+.field{
+  margin-bottom: 30rpx;
+}
+
+.button{
+  display: flex;
+  flex-direction:row;
+  margin-top: 400rpx;
+}
+.btn-margin{
+}
+.btn-color{
+  background-color:#477afb;
+}
